@@ -6,7 +6,22 @@
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <h1>THIS WORKS</h1>
+    <section id="form-section">
+      <header id="headlines">
+        <h1>GIF PARTY</h1>
+        <h2>Enter a search term below and get back a GIF!</h2>
+      </header>
+      <form id="gif-search-form">
+        <label for="gif-search-bar" id="gif-search-bar-label">Enter Your Search Here</label>
+        <input type="text" id="gif-search-bar"/>
+        <input type="submit" id="submit-button" value="Get GIF"/>
+      </form>
+      <button id="remove-all-button">Remove All</button>
+    </section>
+    <section id="gif-area">
+
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script src="app.js"></script>
