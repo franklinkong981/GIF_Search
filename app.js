@@ -19,7 +19,7 @@ gifSearchForm.addEventListener('submit', async (event) => {
 removeAllButton.addEventListener("click", removeAllGIFs);
 
 async function sendGIFRequest(searchTerm) {
-    const response = await axios.get("http://api.giphy.com/v1/gifs/search", {params: {api_key, q: searchTerm}});
+    const response = await axios.get("https://api.giphy.com/v1/gifs/search", {params: {api_key, q: searchTerm}});
     return response;
 }
 
